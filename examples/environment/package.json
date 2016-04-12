@@ -6,6 +6,10 @@
     "angular2",
     "environment"
   ],
+  "scripts": {
+    "watch": "webpack -w",
+    "start": "concurrently \"npm run watch\" \"lite-server\""
+  },
   "author": "Howard.Zuo",
   "license": "MIT",
   "dependencies": {
@@ -14,5 +18,12 @@
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "zone.js": "0.6.10"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.9",
+    "webpack": "^1.12.14"
   }
 }
