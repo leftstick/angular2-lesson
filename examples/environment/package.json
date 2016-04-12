@@ -1,0 +1,18 @@
+{
+  "name": "environment",
+  "version": "1.0.0",
+  "description": "I will show you how to set up angular2 development environment",
+  "keywords": [
+    "angular2",
+    "environment"
+  ],
+  "author": "Howard.Zuo",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "2.0.0-beta.14",
+    "es6-shim": "0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.10"
+  }
+}
