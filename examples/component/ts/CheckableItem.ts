@@ -9,7 +9,7 @@ import {Component, Input, Output, EventEmitter, ChangeDetectionStrategy} from 'a
         }
     `],
     template: `
-    <div class="item">
+    <div>
         <input type="checkbox" [ngModel]="item.isChecked" (click)="clickItem($event)">
         <label [class.deleted]="item.isChecked">{{ item.txt }}</label>
     </div>
