@@ -6,7 +6,8 @@ import {CheckableItem, Item} from './CheckableItem';
     selector: 'my-app',
     template: `
     <h1>My First Angular 2 App</h1>
-    <checkable-item [item]="itemInfo" (onItemClicked)="toggle($event)"></checkable-item>
+    <checkable-item [item]="itemInfo" (onItemClicked)="toggle($event)">
+    </checkable-item>
     `,
     directives: [CheckableItem]
 })
