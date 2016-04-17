@@ -1,7 +1,7 @@
 {
-  "name": "component",
+  "name": "multicomponents",
   "version": "1.0.0",
-  "description": "I will show you how to use angular2 component",
+  "description": "I will show you how multiple angular2 components work together",
   "keywords": [
     "angular2",
     "component"
@@ -23,7 +23,7 @@
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
     "ts-loader": "^0.8.2",
-    "typescript": "^1.8.9",
-    "webpack": "^1.12.14"
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.0"
   }
 }
