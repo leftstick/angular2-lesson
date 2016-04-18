@@ -20,5 +20,6 @@ export class Counter implements OnChanges {
     ngOnChanges(changes: { [key: string]: SimpleChange }): any {
         let newItems: Item[] = changes['items'].currentValue;
         this.length = newItems.reduce((p, item) => p + (item.isChecked ? 0 : 1), 0);
+        this.postFix = this.length > 1 ? 's' : '';
     }
 }
