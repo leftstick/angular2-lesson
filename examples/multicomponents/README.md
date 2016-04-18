@@ -13,7 +13,7 @@ npm install
 npm start
 ```
 
-<!-- If you are looking for details, check it here: [multicomponents](http://leftstick.github.io/tech/2016/04/14/angular2-03-multicomponents) -->
+If you are looking for details, check it here: [multicomponents](https://segmentfault.com/a/1190000004961316)
 
 
 ![](./docs/angular2-03-preview.gif)
