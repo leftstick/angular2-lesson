@@ -8,6 +8,7 @@ Few examples here to demonstrate how you play with [angular2](https://angular.io
 1. [environment](https://github.com/leftstick/angular2-lesson/tree/master/examples/environment)
 2. [component](https://github.com/leftstick/angular2-lesson/tree/master/examples/component)
 3. [multicomponents](https://github.com/leftstick/angular2-lesson/tree/master/examples/multicomponents)
+4. [service](https://github.com/leftstick/angular2-lesson/tree/master/examples/service)
 
 
 ## LICENSE ##

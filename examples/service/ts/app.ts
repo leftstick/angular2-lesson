@@ -1,7 +1,8 @@
 import {Component, OnInit} from 'angular2/core';
 
 import {InputItem} from './InputItem';
-import {CheckableItem, Item} from './CheckableItem';
+import {Item} from './CheckableItem';
+import {ItemList} from './ItemList';
 import {Counter} from './Counter';
 
 import {ItemService} from './ItemService';
@@ -11,12 +12,11 @@ import {ItemService} from './ItemService';
     template: `
     <h1>My First Angular 2 App</h1>
     <input-item (onItemAdded)="addItem($event)"></input-item>
-    <checkable-item *ngFor="#itemInfo of items; #i = index" [item]="itemInfo" (onItemClicked)="toggle($event, i)">
-    </checkable-item>
-    <p *ngIf="loading">Loading</p>
+    <item-list [data]="items" (onItemClicked)="toggle($event)" showLoading="loading">
+    </item-list>
     <counter *ngIf="!loading" [items]="items"></counter>
     `,
-    directives: [InputItem, CheckableItem, Counter],
+    directives: [InputItem, ItemList, Counter],
     providers: [ItemService]
 })
 export class AppComponent implements OnInit {
@@ -39,11 +39,11 @@ export class AppComponent implements OnInit {
         this.items = [...this.items, item];
     }
 
-    toggle(item: Item, index: number) {
+    toggle(e: { item: Item, index: number }) {
         this.items = [
-            ...this.items.slice(0, index),
-            { isChecked: !item.isChecked, txt: item.txt },
-            ...this.items.slice(index + 1)
+            ...this.items.slice(0, e.index),
+            { isChecked: !e.item.isChecked, txt: e.item.txt },
+            ...this.items.slice(e.index + 1)
         ];
     }
 }
