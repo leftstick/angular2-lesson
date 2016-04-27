@@ -12,7 +12,7 @@ import {ItemService} from './ItemService';
     template: `
     <h1>My First Angular 2 App</h1>
     <input-item (onItemAdded)="addItem($event)"></input-item>
-    <item-list [data]="items" (onItemClicked)="toggle($event)" showLoading="loading">
+    <item-list [data]="items" (onItemClicked)="toggle($event)" [showLoading]="loading">
     </item-list>
     <counter *ngIf="!loading" [items]="items"></counter>
     `,

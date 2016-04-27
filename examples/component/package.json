@@ -13,17 +13,17 @@
   "author": "Howard.Zuo",
   "license": "MIT",
   "dependencies": {
-    "angular2": "2.0.0-beta.15",
+    "angular2": "2.0.0-beta.16",
     "es6-shim": "0.35.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
-    "zone.js": "0.6.11"
+    "zone.js": "0.6.12"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
     "ts-loader": "^0.8.2",
-    "typescript": "^1.8.9",
-    "webpack": "^1.12.14"
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.0"
   }
 }
