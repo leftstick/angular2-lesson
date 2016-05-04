@@ -1,4 +1,4 @@
-import {Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy} from 'angular2/core';
+import {Component, OnChanges, SimpleChange, Input, ChangeDetectionStrategy} from '@angular/core';
 
 import {Item} from './CheckableItem';
 

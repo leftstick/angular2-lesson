@@ -1,4 +1,4 @@
-import {Component, Input, Output, EventEmitter, ChangeDetectionStrategy} from 'angular2/core';
+import {Component, Input, Output, EventEmitter, ChangeDetectionStrategy} from '@angular/core';
 
 import { CheckableItem, Item } from './CheckableItem';
 
@@ -6,7 +6,7 @@ import { CheckableItem, Item } from './CheckableItem';
     changeDetection: ChangeDetectionStrategy.OnPush,
     selector: 'item-list',
     template: `
-    <checkable-item *ngFor="#item of data; #i=index" [item]="item" (onItemClicked)="clickItem($event, i)">
+    <checkable-item *ngFor="let item of data; let i=index" [item]="item" (onItemClicked)="clickItem($event, i)">
     </checkable-item>
     <p *ngIf="showLoading">Loading</p>
     `,
