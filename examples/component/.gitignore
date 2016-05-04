@@ -6,3 +6,6 @@ dist/
 
 #osx
 .DS_Store
+
+#tsd
+typings
