@@ -4,3 +4,6 @@ npm-debug.log
 
 #dist
 dist/
+
+#tsd
+typings
