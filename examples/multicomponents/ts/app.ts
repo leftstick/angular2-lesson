@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 
 import {InputItem} from './InputItem';
 import {CheckableItem, Item} from './CheckableItem';
@@ -9,7 +9,7 @@ import {Counter} from './Counter';
     template: `
     <h1>My First Angular 2 App</h1>
     <input-item (onItemAdded)="addItem($event)"></input-item>
-    <checkable-item *ngFor="#itemInfo of items; #i = index" [item]="itemInfo" (onItemClicked)="toggle($event, i)">
+    <checkable-item *ngFor="let itemInfo of items; let i = index" [item]="itemInfo" (onItemClicked)="toggle($event, i)">
     </checkable-item>
     <counter [items]="items"></counter>
     `,
