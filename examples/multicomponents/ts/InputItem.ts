@@ -4,8 +4,8 @@ import {Component, Output, EventEmitter, ChangeDetectionStrategy} from '@angular
     changeDetection: ChangeDetectionStrategy.OnPush,
     selector: 'input-item',
     template: `
-    <form (ngSubmit)="onSubmit()">
-        <input type="text" [(ngModel)]="text">
+    <form (ngSubmit)="onSubmit()" #todoForm="ngForm">
+        <input type="text" [(ngModel)]="text" ngControl="todotext">
         <button type="submit">Add Item</button>
     </form>
     `
