@@ -7,7 +7,7 @@
     "environment"
   ],
   "scripts": {
-    "preinstall": "tsd install",
+    "preinstall": "typings install",
     "watch": "webpack -w",
     "start": "concurrently \"npm run watch\" \"lite-server\""
   },
