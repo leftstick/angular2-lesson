@@ -10,7 +10,6 @@ import {Component, Input, Output, EventEmitter, ChangeDetectionStrategy} from '@
     `],
     template: `
     <div>
-        {{ item.isChecked }}
         <input type="checkbox" (change)="clickItem($event)">
         <label [class.deleted]="item.isChecked">{{ item.txt }}</label>
     </div>
