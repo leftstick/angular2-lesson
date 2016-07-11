@@ -7,7 +7,7 @@
     "component"
   ],
   "scripts": {
-    "preinstall": "typings install",
+    "postinstall": "typings install",
     "start": "webpack-dev-server --hot --inline"
   },
   "author": "Howard.Zuo",
