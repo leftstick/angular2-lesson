@@ -1,8 +1,6 @@
 import {Component} from '@angular/core';
 
-import {InputItem} from './InputItem';
-import {CheckableItem, Item} from './CheckableItem';
-import {Counter} from './Counter';
+import {Item} from './CheckableItem';
 
 @Component({
     selector: 'my-app',
@@ -12,8 +10,7 @@ import {Counter} from './Counter';
     <checkable-item *ngFor="let itemInfo of items; let i = index" [item]="itemInfo" (onItemClicked)="toggle($event, i)">
     </checkable-item>
     <counter [items]="items"></counter>
-    `,
-    directives: [InputItem, CheckableItem, Counter]
+    `
 })
 export class AppComponent {
 

@@ -1,8 +1,17 @@
-import 'es6-shim';
-import 'reflect-metadata';
 import 'zone.js/dist/zone';
-import {bootstrap} from '@angular/platform-browser-dynamic';
+import 'reflect-metadata';
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent }  from './app';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import {AppComponent} from './app';
+import {CheckableItem} from './CheckableItem';
 
-bootstrap(AppComponent);
+@NgModule({
+  imports:      [ BrowserModule ],
+  declarations: [ AppComponent, CheckableItem ],
+  bootstrap:    [ AppComponent ]
+})
+class AppModule { }
+
+platformBrowserDynamic().bootstrapModule(AppModule);

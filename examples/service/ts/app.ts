@@ -1,9 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {InputItem} from './InputItem';
 import {Item} from './CheckableItem';
-import {ItemList} from './ItemList';
-import {Counter} from './Counter';
 
 import {ItemService} from './ItemService';
 
@@ -16,7 +13,6 @@ import {ItemService} from './ItemService';
     </item-list>
     <counter *ngIf="!loading" [items]="items"></counter>
     `,
-    directives: [InputItem, ItemList, Counter],
     providers: [ItemService]
 })
 export class AppComponent implements OnInit {

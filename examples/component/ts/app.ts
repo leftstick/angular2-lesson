@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {CheckableItem, Item} from './CheckableItem';
+import {Item} from './CheckableItem';
 
 @Component({
     selector: 'my-app',
@@ -8,8 +8,7 @@ import {CheckableItem, Item} from './CheckableItem';
     <h1>My First Angular 2 App</h1>
     <checkable-item [item]="itemInfo" (onItemClicked)="toggle($event)">
     </checkable-item>
-    `,
-    directives: [CheckableItem]
+    `
 })
 export class AppComponent implements OnInit {
 
