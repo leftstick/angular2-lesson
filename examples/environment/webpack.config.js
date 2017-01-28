@@ -1,27 +1,25 @@
-'use strict';
-
-var path = require('path');
+const {resolve} = require('path');
 
 module.exports = {
     entry: {
         index: './ts/index.ts'
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         publicPath: 'dist/'
     },
     module: {
-        loaders: [
+        exprContextCritical: false,
+        rules: [
             {
                 test: /\.ts$/,
-                loader: 'ts'
+                use: ['ts-loader']
             }
         ]
     },
     resolve: {
         extensions: [
-            '',
             '.js',
             '.ts'
         ]
