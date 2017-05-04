@@ -12,20 +12,19 @@
   "author": "Howard.Zuo",
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "^2.4.5",
-    "@angular/compiler": "^2.4.5",
-    "@angular/core": "^2.4.5",
-    "@angular/platform-browser": "^2.4.5",
-    "@angular/platform-browser-dynamic": "^2.4.5",
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
     "core-js": "^2.4.1",
-    "rxjs": "5.0.3",
-    "zone.js": "^0.7.6"
+    "rxjs": "5.3.1",
+    "zone.js": "^0.8.10"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.35",
-    "ts-loader": "^2.0.0",
-    "typescript": "^2.1.5",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }
